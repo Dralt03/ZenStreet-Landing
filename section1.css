@@ -64,9 +64,8 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   color: white;
-  margin: 0 20px;
 }
 
 .company-profile {
@@ -84,6 +83,19 @@ body {
 
   .company-profile h1 {
     font-size: 3rem;
+  }
+
+  .nav-feature {
+    display: none;
+  }
+  #svg2 {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  #svg3 {
+    display: none;
   }
 }
 
@@ -181,20 +193,18 @@ body {
 }
 
 #svg1 {
-  top: 9rem;
-  left: 75rem;
+  transform: translate(102%, 70%);
   position: absolute;
 }
 
 #svg2 {
-  top: 40rem;
-  left: 40rem;
+  transform: translate(300%, 75%);
+
   position: absolute;
 }
 
 #svg3 {
-  top: 45rem;
-  left: 15rem;
+  transform: translate(10%, 180%);
   position: absolute;
 }
 

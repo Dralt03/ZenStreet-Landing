@@ -28,7 +28,25 @@
 
 .carosel {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 8rem 3rem;
+  width: 80%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.carosel-track {
+  animation: 15s slide infinite linear;
+  white-space: nowrap;
+}
+
+.carosel-track img {
+  margin: 0 40px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
