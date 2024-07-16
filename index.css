@@ -17,12 +17,20 @@ body {
 }
 
 .navbar {
+  z-index: 10;
+  background: linear-gradient(to left, #0083a2, #006086, #092742);
   width: 100vw;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+}
+
+#waitlist {
+  background: white;
+  color: #092742;
+  padding: 15px 10px;
+  border-radius: 30px;
 }
 
 #company-logo {
@@ -65,14 +73,92 @@ body {
   width: 50%;
 }
 
-.join-form {
-  width: 25rem;
-  height: 35rem;
-  border-radius: 10px;
+@media (max-width: 768px) {
+  #join-form {
+    display: none;
+  }
+
+  .company-profile {
+    width: 100%;
+  }
+
+  .company-profile h1 {
+    font-size: 3rem;
+  }
+}
+
+#join-form {
+  max-width: 25rem;
+  min-height: 25rem;
+  border-radius: 20px;
   padding: 2rem;
   background-color: white;
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.join button {
+  background: rgb(26, 26, 26);
+  color: white;
+  border: none;
+  align-items: center;
+  width: 50%;
+  border-radius: 30px;
+  margin: 10px 100px;
+  padding: 15px 50px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.join button:hover {
+  border: 1px black solid;
+  background: white;
+  color: black;
+}
+
+#Learn {
+  margin: 5rem 0;
+  background: transparent;
+  color: white;
+  padding: 15px 80px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: none;
+  cursor: pointer;
+  font-size: medium;
+}
+
+#Learn:hover {
+  background-color: white;
+  color: #006086;
+}
+
+#form-title {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.form-details {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.input-box {
+  margin: 10px;
+  width: 90%;
+  outline: 0;
+  padding: 10px 5px;
+  font-size: large;
+}
+
+#beta {
+  color: #092742;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #0084a280;
 }
 
 #company-overview {
@@ -90,8 +176,26 @@ body {
 
 h1 {
   padding: 2rem 0;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#svg1 {
+  top: 9rem;
+  left: 75rem;
+  position: absolute;
+}
+
+#svg2 {
+  top: 40rem;
+  left: 40rem;
+  position: absolute;
+}
+
+#svg3 {
+  top: 45rem;
+  left: 15rem;
+  position: absolute;
 }
 
 .section {
@@ -100,8 +204,10 @@ h1 {
 }
 
 #nav-functions {
+  margin-right: 20px;
   list-style: none;
   display: flex;
+  align-items: center;
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -109,5 +215,6 @@ h1 {
 }
 
 .nav-feature {
+  cursor: pointer;
   padding: 0 2rem;
 }

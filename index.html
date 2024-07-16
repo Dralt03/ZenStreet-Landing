@@ -7,28 +7,71 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li id="Company">
+            <img
+              id="company-logo"
+              src="./public/zenstreetai_logo.png"
+              alt="company logo"
+            />
+            <p id="Zen">Zen</p>
+            Street.ai
+          </li>
+        </ul>
+        <ul id="nav-functions">
+          <li class="nav-feature">Features</li>
+          <li class="nav-feature">Problem & Impact</li>
+          <li class="nav-feature">Why ZenStreet</li>
+          <li id="waitlist" class="nav-feature">Join Our Waitlist</li>
+        </ul>
+      </nav>
+    </header>
+
     <section id="section-1" class="section">
-      <header>
-        <nav class="navbar">
-          <ul>
-            <li id="Company">
-              <img
-                id="company-logo"
-                src="./public/zenstreetai_logo.png"
-                alt="company logo"
-              />
-              <p id="Zen">Zen</p>
-              Street.ai
-            </li>
-          </ul>
-          <ul id="nav-functions">
-            <li class="nav-feature">Features</li>
-            <li class="nav-feature">Problem & Impact</li>
-            <li class="nav-feature">Why ZenStreet</li>
-            <li id="waitlist" class="nav-feature">JOIN OUR WAITLIST</li>
-          </ul>
-        </nav>
-      </header>
+      <svg
+        id="svg1"
+        width="159"
+        height="159"
+        viewBox="0 0 159 159"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M159 79.5C159 123.407 123.407 159 79.5 159C35.5934 159 0 123.407 0 79.5C0 35.5934 35.5934 0 79.5 0C123.407 0 159 35.5934 159 79.5ZM25.756 79.5C25.756 109.182 49.818 133.244 79.5 133.244C109.182 133.244 133.244 109.182 133.244 79.5C133.244 49.818 109.182 25.756 79.5 25.756C49.818 25.756 25.756 49.818 25.756 79.5Z"
+          fill="white"
+          fill-opacity="0.06"
+        />
+      </svg>
+      <svg
+        id="svg2"
+        width="250"
+        height="250"
+        viewBox="0 0 159 159"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M159 79.5C159 123.407 123.407 159 79.5 159C35.5934 159 0 123.407 0 79.5C0 35.5934 35.5934 0 79.5 0C123.407 0 159 35.5934 159 79.5ZM25.756 79.5C25.756 109.182 49.818 133.244 79.5 133.244C109.182 133.244 133.244 109.182 133.244 79.5C133.244 49.818 109.182 25.756 79.5 25.756C49.818 25.756 25.756 49.818 25.756 79.5Z"
+          fill="white"
+          fill-opacity="0.06"
+        />
+      </svg>
+      <svg
+        id="svg3"
+        width="400"
+        height="400"
+        viewBox="0 0 159 159"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M159 79.5C159 123.407 123.407 159 79.5 159C35.5934 159 0 123.407 0 79.5C0 35.5934 35.5934 0 79.5 0C123.407 0 159 35.5934 159 79.5ZM25.756 79.5C25.756 109.182 49.818 133.244 79.5 133.244C109.182 133.244 133.244 109.182 133.244 79.5C133.244 49.818 109.182 25.756 79.5 25.756C49.818 25.756 25.756 49.818 25.756 79.5Z"
+          fill="white"
+          fill-opacity="0.06"
+        />
+      </svg>
 
       <div class="main">
         <div class="company-profile">
@@ -39,10 +82,26 @@
             of your operating expenses and boost your earnings by
             <span id="increase">6+ lakhs</span> annually
           </p>
+          <button id="Learn">Learn How</button>
         </div>
-        <div class="join-form">
-            <h2>Join our waitlist</h1>
-          <form>
+        <div id="join-form">
+          <div class="form-details">
+            <span id="form-title">Join our waitlist</span>
+            <div id="beta">BETA</div>
+          </div>
+          <p style="padding: 2rem 0; color: rgb(105, 105, 105)">
+            Join our waitlist and be part of out Beta Program. Our team will
+            reach out within 48 hours to guide you through onboarding and tailor
+            our holistic platform to your unique needs
+          </p>
+          <form class="join">
+            <div style="display: flex; width: 100%" class="Name">
+              <input class="input-box" type="text" placeholder="First Name" />
+              <input class="input-box" type="text" placeholder="Last Name" />
+            </div>
+            <input class="input-box" type="text" placeholder="Email" />
+            <input class="input-box" type="text" placeholder="Phone" />
+            <button type="submit">Join Now</button>
           </form>
         </div>
       </div>
