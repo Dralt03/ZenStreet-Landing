@@ -174,7 +174,7 @@ body {
   font-weight: 600;
 }
 
-h1 {
+.company-profile h1 {
   padding: 2rem 0;
   font-size: 3rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
