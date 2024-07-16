@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #092742;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0083a2;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+#company-logo {
+  height: 8rem;
+}
+
+#Company {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: white;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#Zen {
+  font-weight: 600;
+}
+
+#waitlist {
+  display: none;
+}
+
+#section-1 {
+  background: linear-gradient(to bottom left, #0083a2, #006086, #092742);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  color: white;
+  padding: 0 10rem;
+}
+
+#company-overview {
+  padding: 2rem 10rem 0 0;
+  text-wrap: pretty;
+  font-size: larger;
+  color: rgb(182, 182, 182);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#increase {
+  color: white;
+  font-weight: 600;
+}
+
+h1 {
+  padding: 2rem 0;
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+
+#nav-functions {
+  list-style: none;
+  display: flex;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+.nav-feature {
+  padding: 0 2rem;
+}
