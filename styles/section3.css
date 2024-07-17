@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#section-3 {
+  background: #cae6f4;
+  min-height: 70vh;
+  max-height: 80vh;
+}
+
+#section-3 h1 {
+  font-weight: 550;
+  margin-top: 8%;
+  font-size: 350%;
+  font-family: monospace;
+}
+
+@media (max-width: 680px) {
+  #section-3 h1 {
+    font-size: 230%;
+  }
+
+  #section-3 p {
+    font-size: small;
+  }
+}
+#section-3 p {
+  margin-top: 8%;
+  color: rgb(116, 116, 116);
+  font-size: 200%;
+}

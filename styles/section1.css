@@ -84,15 +84,16 @@ body {
   .company-profile h1 {
     font-size: 3rem;
   }
+}
 
-  .nav-feature {
-    display: none;
-  }
+@media (max-width: 1000px) {
   #svg2 {
     display: none;
   }
+  .nav-feature {
+    display: none;
+  }
 }
-
 @media (max-width: 425px) {
   #svg3 {
     display: none;
